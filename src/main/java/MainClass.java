@@ -1,4 +1,13 @@
+import dataoperations.CheckIfPalindrome;
+import dataoperations.Strings.*;
+import dataoperations.bit.BitCounting;
+import dataoperations.numbers.MaximumSubarraySum;
+import dataoperations.numbers.SumParts;
+import dataoperations.time.TimeComparator;
+
 import java.lang.reflect.Array;
+import java.nio.channels.CancelledKeyException;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -7,19 +16,12 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class MainClass {
-    public static void main(String[] args) {
-        ArrayList list = new ArrayList();
-
-        list.add(new int[] {10,0});
-        list.add(new int[] {3,5});
-        list.add(new int[] {2,5});
-
-
-        System.out.println(Metro.countPassengers(list));
-        System.out.println(Metro.countPassengers2(list));
-        System.out.println(Metro.countPassengers3(list));
-
+    public static void main(String[] args) throws ParseException {
+        System.out.println(CountDuplicates.duplicateCount("adik"));
     }
+
+
+
 
     public static class Square {
         public static boolean isSquare(int n) {
